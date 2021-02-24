@@ -31,8 +31,10 @@ export async function getStaticProps({ params: { slug } }) {
 const BlogPost = ({ post, blocks }) => (
   <div className="blog mt-16 min-h-full flex justify-center items-center">
     <div className="blog-post max-w-full w-5/6">
-      <h1>{post.title}</h1>
+      <h1 className="font-medium text-4xl mb-10 antialiased">{post.title}</h1>
+      <div className="text-xl antialiased">
       <NotionRenderer blockMap={blocks} />
+      </div>
     </div>
   </div>
 )
