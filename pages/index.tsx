@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { motion, Variants } from 'framer-motion'
-import Image from 'next/image'
+import Moment from 'react-moment';
+
 
 // Troque este conteúdo pela primeira parte da URL da sua tabela
 const NOTION_BLOG_ID = 'fbc99b7d73834e5ca6db36139ba5e457?v=adc1eb4a57e54bf39e5ca3074f2f33fb'
@@ -27,6 +28,7 @@ export async function getStaticProps() {
 }
 
 function HomePage({ posts }) {
+  console.log(posts)
   return (
     <div className="flex justify-center items-center">
       <motion.h1
@@ -39,7 +41,7 @@ function HomePage({ posts }) {
             <Link key={post.slug} href="/[slug]" as={`/${post.slug}`}>
             <div className="max-w-4xl px-10 my-4 py-6 bg-white rounded-lg shadow-md">
                 <div className="flex justify-between items-center">
-                    <span className="font-light text-gray-600">{post.date}</span>
+                    <span className="font-light text-gray-600"><Moment format="DD/MM/YYYY">{post.date}</Moment></span>
                 </div>
                 <div className="mt-2">
                     <a className="text-2xl text-gray-700 font-bold hover:text-gray-600" href="#">{post.title}</a>
