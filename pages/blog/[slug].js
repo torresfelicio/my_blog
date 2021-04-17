@@ -15,9 +15,9 @@ export default function BlogPage({title, date, content, slug}) {
       </Head>
 
       <main>
-        <div>
+        <div className="mb-10">
           <div className="border-b-2 border-gray-200 mb-4">
-            <h2 className="text-3xl font-bold">
+            <h2 className="text-4xl font-bold">
               {title}
             </h2>
             <div className="text-gray-600 text-xs">
