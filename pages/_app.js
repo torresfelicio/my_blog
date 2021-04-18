@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
                 <Image
                     className="rounded-full "
                     src={img}
-                    alt="My Image"
+                    alt="Imagem do Lucas"
                     width={90}
                     height={90}
                 />
