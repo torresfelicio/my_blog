@@ -62,7 +62,6 @@ Se existir apenas as informações `information_schema` `performance_schema` `sy
 | drop table  nome_tabela; | [deleta a tabela] |
 | drop database nome_do_banco; | [deleta o banco] |
 | ctrl+l; | [limpa o terminal] |
-| ctrl+l; | [limpa o terminal] |
 
 # Outros comandos básicos
 
