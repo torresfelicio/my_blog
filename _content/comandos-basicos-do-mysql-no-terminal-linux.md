@@ -91,4 +91,4 @@ mysql -u root -p database_name < database_name.sql;
 
 ## Conclusão 
 
-O ponto aqui é que pelo terminal você pode realizar todos os comandos existentes no mysql, quando você precisar realizar apenas uma consulta simples ou verificar algo rapidamente você pode utilizar o terminal sem problemas agora 😀. 
+O ponto aqui é que pelo terminal você pode realizar todos os comandos existentes no mysql, quando você precisar realizar apenas uma consulta simples ou verificar algo rapidamente você pode utilizar o terminal sem problemas agora 😀.
